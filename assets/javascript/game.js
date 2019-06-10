@@ -1,5 +1,5 @@
 //array of word options
-var wordList = ['wedge', 'lowers', 'zuma', 'pipe', 'jaws', 'bondi']
+var wordList = ['lowers', 'zuma', 'jaws', 'bondi']
 wordSplit = [];
 var emptyDiv = [];
 var underScoreArr = [];
@@ -25,15 +25,23 @@ var replace = function () {
     }
 }
 replace()
+//restart game
+var restart = function () {
+    underScore = []; 
+    underScoreArr = []; 
+    split = []; 
+    guessesLeft = 10; 
+    wordBank = [];
+    repeatedLetters = [];
+    replace();
+}
 
-var youWin = function() {
-    var divLeft = 0; 
+var youWin = function () {
+    var divLeft = 0;
     for (var i = 0; i < underScoreArr.length; i++) {
         if (underScoreArr[i] === ' _ ') {
-            divLeft++ 
-        } //else if(underScoreArr[i] !== ' _ '){
-            //divLeft--
-        //}
+            divLeft++
+        } 
     }
     console.log(divLeft)
     if (divLeft === 0) {
