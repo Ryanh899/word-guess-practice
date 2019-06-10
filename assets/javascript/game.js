@@ -1,11 +1,11 @@
 //array of word options
-var wordList = ['surf', 'board', 'wave', 'ocean', 'tide']
+var wordList = ['wedge', 'lowers', 'zuma', 'pipe', 'jaws', 'bondi']
 wordSplit = [];
 var emptyDiv = [];
 var underScoreArr = [];
 var wordBank = [];
 var repeatedLetters = [];
-var guessesLeft = 12;
+var guessesLeft = 10;
 var win = [];
 //pick random word
 var word = wordList[Math.floor(Math.random() * wordList.length)];

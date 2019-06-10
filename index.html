@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <link src="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="word"></div>
-    <div id="guesses">Guesses: </div>
-    <div id="guessesLeft">Guesses Left: 12</div>
+    <div class="bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron head p-2 m-2 center">
+                    <h1 class="display-6">Hangman</h1>
+                    <p class="lead">Click a key and see if you can guess the beach</p>
+                    <p>You only get 10 wrong guesses</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text">
+        <div class="row">
+            <div class="col-md-12">
+                <div class= "word center p-2" id="word"></div>
+                <div class="container border border-dark p-1 box rounded">
+                <div class= "word center p-2" id="guesses"><p>Guesses: </p></div>
+                <div class= "word center p-2" id="guessesLeft"><p>Guesses Left: 10</p></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
     <script src="./assets/javascript/game.js"></script>
 </body>
+
 </html>
